@@ -1,0 +1,508 @@
+:root{
+    --color-tipografia:#E84FB8;
+    --tipografia-menu:  'Quicksand';
+    --tipografia-texto: 'Ubuntu' ;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    scroll-behavior: smooth;
+    //------------------MENU -------------------//
+    .div-header{
+        background: #1e2326;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        header{
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            div{
+                a{
+                text-decoration: none;
+                font-size: 36px;
+                color: var(--color-tipografia);
+                font-family: var(--tipografia-menu);
+                font-weight: 600;
+                }
+            }
+            nav{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    li{
+                        a{
+                            font-family: var(--tipografia-menu);
+                            font-weight: 400;
+                            text-decoration: none;
+                            margin: 0 15px;
+                            padding: 3px;
+                            color: #fff;
+                            transition: .5s;
+                        }
+                        a:hover{
+                                color: var(--color-tipografia);
+                        }
+                    }
+                }
+            }
+            .nav-responsive{
+                background-color: var(--color-tipografia);
+                color:#fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                display: none;
+            }
+
+        }
+    }
+
+
+    //-------------------------- HOME---------------------//
+    .inicio{
+        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+        url(img/fondo.jpg);
+        background-size: cover;
+        height: 100vh;
+        
+        color: #fff;
+        display: flex;
+        margin-top: 30px;
+        
+        .div-inicio{
+            max-width: 380px;
+            background-color: #1e2326;  
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 40px;
+            .div-img{
+                
+                img{
+                    width: 80%;
+                    border: 10px solid var(--color-tipografia);
+                    display: block;
+                    margin: auto;
+                    border-radius: 100%;
+                    
+                }
+            }
+            h1{
+                font-family: var(--tipografia-menu);
+                font-size: 34px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                
+            }
+            h2{
+                font-family: var(--tipografia-texto);
+                font-size: 15px;
+                font-weight: 400;
+                
+            }
+            .redes{
+                a{
+                    text-decoration: none;
+                    display: inline-block;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    border-radius: 100%;
+                    width: 42px;
+                    height: 42px;
+                    line-height: 42px;
+                    margin: 20px 5px 0px 5px;
+                    font-size: 20px;
+                    transition: .3s;
+                }
+                a:hover{
+                    background-color: var(--color-tipografia);
+                }
+            }
+        }
+    }
+    
+    //------------------------SECTION ABOUT ME --------------------------->
+    .sobre-mi{
+        background-color: #1e2326;
+        color: #fff;
+        padding: 50px 20px;
+        .div-section{
+            max-width: 1100px;
+            margin: auto;
+            h2{
+                font-family: var(--tipografia-menu);
+                text-align: center;
+                font-size: 48px;
+                padding: 20px 0;
+            }
+            p{
+                font-family: var(--tipografia-texto);
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 20px;
+                span{
+                    color: var(--color-tipografia);
+                }
+            }
+            .datos-interes{
+                display: flex;
+                .datos{
+                    width: 50%;
+                    h3{
+                        font-family: var(--tipografia-menu);
+                        font-size: 28px;
+                        margin-bottom: 25px;
+                    }
+                    ul{
+                        font-family: var(--tipografia-texto);
+                        list-style: none;
+                        li{
+                            margin: 12px 0;
+                            strong{
+                                display: inline-block;
+                                color: var(--color-tipografia) ;
+                                width: 130px;
+                            }
+                        }
+                    }
+                }
+                .intereses{
+                    width: 50%;
+                    h3{
+                        font-family: var(--tipografia-menu);
+                        font-size: 28px;
+                        margin-bottom: 25px;
+                    }
+                    .div-intereses{
+                        display: flex;
+                        flex-wrap: wrap;
+                        .interes{
+                            display: flex;
+                            flex-direction: column;
+                            height: 100px;
+                            width: 100px;
+                            margin: 0 15px 15px 0;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #252A2E;
+                            border-radius: 10px;
+                            transition: .3s;
+                            i{
+                                font-size: 30px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .interes:hover{
+                            background-color: var(--color-tipografia);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------SECTION SKILLS-----------------------------//
+    .skills{
+        background-color: #252A2E;
+        color: #fff;
+        padding: 50px 20px;
+        .div-skills{
+            max-width: 1100px;
+            margin: auto;
+            h2{
+                font-family: var(--tipografia-menu);
+                text-align: center;
+                font-size: 48px;
+                margin: 20px 0;
+            }
+            .habilidades{
+                display: flex;
+                .tecnicas{
+                    width: 50%;
+                    padding: 0 20px;
+                    h3{
+                        font-family: var(--tipografia-menu);
+                        font-size: 28px;
+                        margin-bottom: 25px;
+                    }
+                    .skill{
+                        span{
+                            font-family: var(--tipografia-menu);
+                            font-weight: bold;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        .barra{
+                            height: 8px;
+                            width: 80%;
+                            background-color: #131517;
+                            position: relative;
+                            margin-bottom: 30px;
+                            .progreso{
+                                background-color:var(--color-tipografia);
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 8px;
+                                span{
+                                    position: absolute;
+                                    height: 40px;
+                                    width: 40px;
+                                    background-color: var(--color-tipografia);
+                                    border-radius: 50px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    top: -17px;
+                                    right: -15px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blandas{
+                    width: 50%;
+                    padding: 0 20px;
+                    h3{
+                        font-family: var(--tipografia-menu);
+                        font-size: 28px;
+                        margin-bottom: 25px;
+                    }
+                    .skill{
+                        span{
+                            font-family: var(--tipografia-menu);
+                            font-weight: bold;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        .barra{
+                            height: 8px;
+                            width: 80%;
+                            background-color: #131517;
+                            position: relative;
+                            margin-bottom: 30px;
+                            .progreso{
+                                background-color: var(--color-tipografia);
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 8px;
+                                span{
+                                    position: absolute;
+                                    height: 40px;
+                                    width: 40px;
+                                    background-color: var(--color-tipografia);
+                                    border-radius: 50px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    top: -17px;
+                                    right: -15px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+//-------------------------------SECTION PORTFOLIO-----------------------//
+    .portfolio{
+        background-color: #252A2E;
+        color: #fff;
+        padding: 50px 20px;
+        .div-portfolio{
+            max-width: 1100px;
+            margin: auto;
+            h2{
+                font-family: var(--tipografia-menu);
+                text-align: center;
+                font-size: 48px;
+                margin: 20px 0;
+            }
+            .galeria{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .proyecto{
+                    position: relative;
+                    max-width: 340px;
+                    height: fit-content;
+                    margin: 10px;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                    .efecto{
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        background: linear-gradient(rgba(232, 79, 184,.8), rgba(28,182,152,.8));
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        transition: 1s;
+                        font-size: 18px;
+                        letter-spacing: 3px;
+                        opacity: 0;
+                        h3{
+                            font-family: var(--tipografia-menu);
+                            margin-bottom: 20px;
+                            transition: 1s;
+                        }
+                        P{
+                            font-family: var(--tipografia-texto);
+                        }
+                    }
+                    .efecto:hover{
+                        opacity: 1;
+                        h3{
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //--------------------------SECTION CONTACTO----------------
+    .contacto{
+        background-color: #1e2326;;
+        color: #fff;
+        padding: 50px 20px;
+        .div-contacto{
+            max-width: 1100px;
+            margin: auto;
+            h2{
+                font-family: var(--tipografia-menu);
+                text-align: center;
+                font-size: 48px;
+                margin: 20px 0;
+            }
+            .form-mapa{
+                display: flex;
+                .formulario{
+                    width: 50%;
+                    padding: 10px;
+                    input{
+                        padding: 10px;
+                        width: 100%;
+                        font-family: var(--tipografia-texto);
+                        font-size: 18px;
+                        border: none;
+                        margin-bottom: 20px;
+                        
+                    }
+                    textarea{
+                        padding: 10px;
+                        font-family: var(--tipografia-texto);
+                        width: 100%;
+                        font-size: 18px;
+                        border: none;
+                        margin-bottom: 20px;
+                    }
+                    button{
+                        margin-left: 35%;
+                        cursor: pointer;
+                        position: relative;
+                        align-content: center;
+                        padding: 10px;
+                        width: 30%;
+                        border: solid 2px #fff;;
+                        font-family: var(--tipografia-texto);
+                        font-weight: 400;
+                        font-size: 18px;
+                        background-color: transparent;
+                        color: #fff;
+                }
+                button:hover{
+                    color: rgba(255, 255, 255, 1) t;
+                    background-color: #E84FB8;
+                    transition: all 0.4s ease;
+                }
+                }
+                .mapa{
+                    width: 50%;
+                    padding: 10px;
+                    iframe{
+                        width: 100%;
+                    }
+                    .info{
+                        
+                        top: 40%;
+                        background-color: #252A2E;
+                        padding: 20px;
+                        width: 75%;
+                        left: 50%;
+                        ul{
+                            list-style: none;
+                            font-family: var(--tipografia-texto);
+                            li{
+                                
+                                margin-bottom: 20px;
+                                i{
+                                    color: var(--color-tipografia);
+                                    display: inline-block;
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width:980px) {
+    header{
+        nav{
+        display: none;  
+        }
+        .nav-responsive{
+            display: block !important;
+        
+        }
+        nav.responsive{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 75px;
+            background-color: #252A2E;
+            width: 180px;
+            ul{
+                display: block !important;
+                li{
+                    border-bottom: 1px solid #fff;
+                    padding: 10px 0;
+                }
+            }
+        }
+        }
+}
+@media screen and (max-width:840px) {
+  .contacto{
+    .div-contacto{
+        .for-mapa{
+            .formulario{
+                width: 100%;
+            }
+            .mapa{
+                width: 100%;
+            }
+        }
+    }
+  }
+}
